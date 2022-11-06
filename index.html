@@ -10,14 +10,14 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Ticket Tracker</title>
 </head>
-<body>
+<body class="bg-warning">
     <header>
         <section class="container">
             <h1><strong style="text-decoration: underline ;"> Track Your Tickets </strong></h1>
-            <section class="jumbotron">
+            <section class="mt-4 p-5 bg-success text-white rounded">
                 <h1>Add new issue:</h1>
                 <form action="" id="issueInputForm">
-                    <div class="form-group">
+                    <div class="form-group table-hover">
                         <label for="issueSubjectInput">Subject</label>
                         <input type="text" class="form-control" id="issueSubjInput" placeholder="Issue Subject...">
                     </div>
@@ -45,7 +45,7 @@
 
     </header>
     <section class="row">
-        <section class="col-lg-12 jumbotron">
+        <section class="mt-4 p-5 bg-success text-white rounded">
             <div id="issuesList">
                 <!-- This will be populated by javascript -->
             </div>
