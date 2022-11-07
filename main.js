@@ -20,18 +20,18 @@
             let severity = issues[i].severity
             let assignedTo = issues[i].assignedTo
             let status = issues[i].status
-            let statusColor = status == "Closed" ? "label-primary" : "label-danger"
+            let statusColor = status == "Closed" ? "bg-info" : "bg-danger"
 
             issuesList.innerHTML += 
             '<div class="well">' +
         '<h6>Issue ID:' + id + '</h6>' +
-        '<p><span class= "label ' + statusColor + ' ">' + status + '</span></p>' +
+        '<p><span class= "bg ' + statusColor + ' ">' + status + '</span></p>' +
         '<h3>' + subject + '</h3>' +
         '<article>' + description + '</article>' + 
-        '<p><span class="glyphicon glyphicon-time"></span> ' + severity + ' ' + '<span class="glyphicon glyphicon-user"></span>' + assignedTo + '</p>' +
+        '<p><ion-icon name="radio-outline"></ion-icon></span> ' + severity + ' ' + '<ion-icon name="person-circle-outline"></ion-icon>' + assignedTo + '</p>' +
         '<a href="#" class="btn btn-warning" onclick="setStatusClosed(\''+id+'\')">Close</a> ' +
         '<a href="#" class="btn btn-danger" onclick="deleteIssue(\''+id+'\')">Delete</a> '
-        + '</div>'            
+        + '</div><br>'            
         }
 
     }
