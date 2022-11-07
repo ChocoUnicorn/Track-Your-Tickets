@@ -31,7 +31,7 @@
         '<p><ion-icon name="radio-outline"></ion-icon></span> ' + severity + ' ' + '<ion-icon name="person-circle-outline"></ion-icon>' + assignedTo + '</p>' +
         '<a href="#" class="btn btn-warning" onclick="setStatusClosed(\''+id+'\')">Close</a> ' +
         '<a href="#" class="btn btn-danger" onclick="deleteIssue(\''+id+'\')">Delete</a> '
-        + '</div><br>'            
+        + '</div><br><hr>'            
         }
 
     }
